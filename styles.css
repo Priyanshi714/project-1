@@ -1,0 +1,153 @@
+
+   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+   
+
+
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    transition: 0.3s ease-in-out;
+    z-index: 1000;
+    background-size: none;
+    background-image: none;
+}
+
+nav .logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    
+}
+
+nav .logo span {
+    color: #ff4e50;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    color: #ff4e50;
+}
+
+/* Scrolled Effect */
+.scrolled {
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.scrolled .logo, .scrolled ul li a {
+    color: #333;
+    background-size: none;
+    background-image: none;
+
+
+}
+
+/* Hero Section */
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(35, 53, 60);
+    padding: 20px;
+    background-image:url(josh-hild-ZDfFJZ5ruaI-unsplash.jpg);
+    background-size:cover;
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+
+
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    background-size: none;
+
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    background: #ff4e50;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    
+
+}
+
+.btn:hover {
+    background: #fc913a;
+}
+
+/* Sections */
+section {
+    padding: 80px 50px;
+    text-align: center;
+    background:#5d737e;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+
+
+    }
+}
